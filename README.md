@@ -9,6 +9,7 @@ Un servicio intermedio (Proxy) robusto construido con Spring Boot que consume da
 *   **Cliente HTTP:** Spring RestClient
 *   **Documentación:** SpringDoc OpenAPI (Swagger UI)
 *   **Caché:** Spring Cache (ConcurrentMapCache)
+*   **Contenedores:** Docker (Multi-stage build)
 *   **Productividad:** Project Lombok
 *   **Build Tool:** Maven
 
@@ -59,6 +60,17 @@ Si despliegas en Render, debes configurar estas variables en su panel:
     mvn spring-boot:run
     ```
 4.  Acceder a la documentación en `http://localhost:8080/swagger-ui.html`.
+
+### Opción 2: Usando Docker (Recomendado para despliegue)
+
+1.  Construir la imagen:
+    ```bash
+    docker build -t pokeproxy .
+    ```
+2.  Ejecutar el contenedor:
+    ```bash
+    docker run -p 8080:8080 -e PROXY_BASE_URL=http://localhost:8080 pokeproxy
+    ```
 
 ## ⚠️ Mantenibilidad
 - El código incluye Javadoc completo en controladores y servicios.
