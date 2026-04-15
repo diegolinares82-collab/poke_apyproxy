@@ -82,6 +82,7 @@ public class PokemonService {
                                                         .collect(Collectors.toList()))
                                         .sprites(PokemonResponse.Sprites.builder()
                                                         .frontDefault(externalResponse.getSprites().getFrontDefault())
+                                                        .backDefault(externalResponse.getSprites().getBackDefault())
                                                         .other(PokemonResponse.OtherSprites.builder()
                                                                         .officialArtwork(PokemonResponse.Artwork
                                                                                         .builder()

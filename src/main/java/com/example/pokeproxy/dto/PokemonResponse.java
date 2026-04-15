@@ -120,6 +120,11 @@ public class PokemonResponse {
         @Schema(description = "Sprite frontal por defecto", example = "url_to_sprite")
         @JsonProperty("front_default")
         private String frontDefault;
+
+        @Schema(description = "Sprite trasero por defecto", example = "url_to_back_sprite")
+        @JsonProperty("back_default")
+        private String backDefault;
+
         private OtherSprites other;
     }
 

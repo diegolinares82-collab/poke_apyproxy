@@ -58,6 +58,8 @@ public class PokeApiPokemonResponse {
     public static class Sprites {
         @JsonProperty("front_default")
         private String frontDefault;
+        @JsonProperty("back_default")
+        private String backDefault;
         private OtherSprites other;
     }
 
