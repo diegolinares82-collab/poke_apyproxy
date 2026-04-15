@@ -73,6 +73,7 @@ public class PokemonService {
                                         .stats(externalResponse.getStats().stream()
                                                         .map(s -> PokemonResponse.StatEntry.builder()
                                                                         .baseStat(s.getBaseStat())
+                                                                        .effort(s.getEffort())
                                                                         .stat(PokemonResponse.StatDetail.builder()
                                                                                         .name(s.getStat().getName())
                                                                                         .url(s.getStat().getUrl())

@@ -92,6 +92,10 @@ public class PokemonResponse {
         @Schema(description = "Valor base de la estadística", example = "35")
         @JsonProperty("base_stat")
         private Integer baseStat;
+
+        @Schema(description = "Puntos de esfuerzo (EV) otorgados", example = "0")
+        private Integer effort;
+
         private StatDetail stat;
     }
 

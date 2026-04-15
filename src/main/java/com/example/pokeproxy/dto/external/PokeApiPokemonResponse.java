@@ -44,6 +44,7 @@ public class PokeApiPokemonResponse {
     public static class StatEntry {
         @JsonProperty("base_stat")
         private Integer baseStat;
+        private Integer effort;
         private StatDetail stat;
     }
 
