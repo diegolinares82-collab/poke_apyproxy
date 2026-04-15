@@ -50,6 +50,7 @@ public class PokeApiPokemonResponse {
     @Data
     public static class StatDetail {
         private String name;
+        private String url;
     }
 
     @Data

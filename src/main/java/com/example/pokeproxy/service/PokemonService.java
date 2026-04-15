@@ -75,6 +75,7 @@ public class PokemonService {
                                                                         .baseStat(s.getBaseStat())
                                                                         .stat(PokemonResponse.StatDetail.builder()
                                                                                         .name(s.getStat().getName())
+                                                                                        .url(s.getStat().getUrl())
                                                                                         .build())
                                                                         .build())
                                                         .collect(Collectors.toList()))

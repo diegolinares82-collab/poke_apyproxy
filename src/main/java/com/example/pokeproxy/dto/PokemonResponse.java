@@ -102,6 +102,9 @@ public class PokemonResponse {
     public static class StatDetail {
         @Schema(description = "Nombre de la estadística", example = "hp")
         private String name;
+
+        @Schema(description = "URL para obtener más detalles de la estadística", example = "https://pokeapi.co/api/v2/stat/1/")
+        private String url;
     }
 
     @Data
